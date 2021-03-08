@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityCatalogo"
+    android:background="@color/backgorund_color"
+    >
+
+    <LinearLayout
+        android:id="@+id/espacio_peliculas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="MOVIES"
+            android:textColor="@color/buttom_color"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <GridView
+            android:id="@+id/gridview_peliculas"
+            android:layout_width="match_parent"
+            android:layout_height="338dp"
+            android:numColumns="3">
+
+        </GridView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/espacio_series"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="SERIES"
+            android:textColor="@color/buttom_color"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <GridView
+            android:id="@+id/gridview_series"
+            android:layout_width="match_parent"
+            android:layout_height="338dp"
+            android:numColumns="3">
+
+        </GridView>
+
+    </LinearLayout>
+
+</LinearLayout>
